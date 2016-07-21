@@ -1,0 +1,8 @@
+---
+- hosts: all
+	gather_facts: no
+	connection: local
+	tasks:
+		- name: demo nodes kill
+			ec2:
+				state: stopped
